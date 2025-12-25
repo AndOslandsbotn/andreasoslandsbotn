@@ -1,0 +1,28 @@
+site_name: Andreas Oslandsbotn
+site_url: https://andoslandsbotn.github.io/
+theme:
+  name: material
+  palette:
+    primary: '#ffe4ec'   # soft pink
+    accent: '#8b5e3c'    # brown for headers/highlights
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs      # top menu tabs
+    - navigation.top       # also optional top bar
+    - toc.integrate        # integrate table of contents in sidebar
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Blog:
+      - Blog Index: blog/index.md
+      - First Post: blog/first-post.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.highlight
+  - toc:
+      permalink: true
