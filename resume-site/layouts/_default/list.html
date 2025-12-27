@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ partial "profile.html" . }}
+
+{{ partial "background.html" . }}
+  
+{{ partial "interests.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+  
+{{ end }}
